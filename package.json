@@ -215,5 +215,22 @@
   },
   "tsd": {
     "directory": "test/types/"
-  }
+  },
+  "build":{
+    "asar":true,
+    "appId":"myappid",
+    "asarUnpack":[
+       "**/node_modules/sharp/**/*"
+    ],
+    "extraResources":[
+       "bg_mask.png"
+    ],
+    "mac":{
+       "category":"app.beta.com",
+       "icon":"assets/ico/mac_icon.icns"
+    },
+    "win":{
+       "iconUrl":"https://aurl.win_icon.ico"
+    }
+ }
 }
